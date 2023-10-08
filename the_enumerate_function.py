@@ -1,0 +1,3 @@
+supplies=['pen','pencil','eraser','flamethrower','blade']
+for index,item in enumerate(supplies):
+    print('Index' + str(index) + ' in supplies is ' + item)
