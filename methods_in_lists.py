@@ -1,0 +1,12 @@
+spam = ['hello', 'hi', 'howdy', 'heyas']
+print(spam.index('hi'))
+spam.append('bonjour')
+print(spam)
+spam.insert(2,'Namaste')
+print (spam)
+spam.remove('hi')
+print(spam)
+spam.sort(key=str.lower)
+print(spam)
+spam.sort(reverse=True, key=str.lower)
+print (spam)
