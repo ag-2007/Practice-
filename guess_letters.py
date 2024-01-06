@@ -1,13 +1,15 @@
 import random
+from pathlib import Path
 
 words = []
-SOWPODS = "D:\\Anika Gupta\\Others\\IAMNEO\\Coding\\Practice python\\Exercises\\guess_letters\\SOWPODS.txt"
+SOWPODS = Path("") / "SOWPODS.txt"
 
 with open(SOWPODS, 'r') as f:
     line = f.readline().strip()
     while line:
         line = f.readline().strip()
         words.append(line)
+        pass
 
 random_word = words[random.randint(0, len(words) - 1)]
 
